@@ -115,7 +115,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="side-space section-space">
+    <div className="section-space">
       <div className="container-fluid">
         <h2 className="slider-title text-center heading">
           What do people think about their leaders?

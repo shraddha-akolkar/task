@@ -49,7 +49,7 @@ const News = () => {
     const videoRefs = useRef([]);
 
   return (
-    <div className="side-space section-space">
+    <div className="section-space">
       <div className="container-fluid">
         <div className="row g-4">
           <div className="col-lg-7">

@@ -14,7 +14,7 @@ const data = [
 
 const Cards = () => {
   return (
-    <div className="side-space cards-main">
+    <div className="cards-main">
       <div className="container-fluid ">
         <div className="cards-row">
           {data.map((item, index) => (

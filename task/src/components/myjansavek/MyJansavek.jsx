@@ -41,7 +41,7 @@ const data = [
 
 const Why = () => {
   return (
-    <div className="side-space why-section section-space">
+    <div className="why-section section-space">
       <div className="container">
         <div className="why-heading text-center">
           <h2>Why MyJansevak?</h2>

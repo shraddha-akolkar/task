@@ -10,7 +10,7 @@ const stats = [
 
 const Trust = () => {
   return (
-    <section className=" side-space container-fluid">
+    <section className="container-fluid">
       <div className="trust-section " >
 
         <h2 className="trust-title heading text-center heading">

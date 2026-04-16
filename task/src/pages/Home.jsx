@@ -12,6 +12,8 @@ import Slider from "../components/slider/Slider";
 import News from "../components/news/News";
 import Navbar from "./header/Navbar";
 const Home = () => {
+  const horizontalSectionPadding = "var(--side-space)";
+
   return (
     <div>
       <Navbar />
@@ -24,6 +26,8 @@ const Home = () => {
           gap: "50px",
           marginTop: "50px",
           marginBottom: "50px",
+          paddingLeft: horizontalSectionPadding,
+          paddingRight: horizontalSectionPadding,
         }}
       >
         <Cards />

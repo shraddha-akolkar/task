@@ -97,7 +97,7 @@ const Spotlight = () => {
   ];
 
   return (
-    <div className="side-space">
+    <div>
       <div className="container-fluid spotlight-section">
         <div className="d-flex justify-content-between align-items-center flex-wrap mb-4">
           <h2 className="spotlight-title">Leaders in Spotlight</h2>

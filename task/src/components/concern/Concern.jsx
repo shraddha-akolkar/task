@@ -3,7 +3,7 @@ import "./Concern.css";
 
 const Concern = () => {
   return (
-    <section className="Concern-section side-space section-space">
+    <section className="Concern-section section-space">
       <div className="container-fluid ">
         <div className="Concern-grid  ">
           

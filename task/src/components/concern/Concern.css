@@ -63,60 +63,55 @@
 
 
 @media (max-width: 1024px) {
-  .cta-grid {
+  .Concern-grid {
+    gap: 20px;
+  }
+
+  .Concern-card {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Concern-grid {
     grid-template-columns: 1fr;
   }
 
-  .cta-card {
-    padding: 25px 20px;
-  }
-
-  .cta-content h2 {
+  .Concern-content h2 {
     font-size: 20px;
   }
 
-  .cta-content p {
+  .Concern-content p {
     font-size: 13px;
   }
 }
 
-@media (max-width: 768px) {
-  .cta-card {
+@media (max-width: 767px) {
+  .Concern-card {
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 14px;
+    padding: 20px 16px;
   }
 
-  .cta-btn {
+  .Concern-btn {
     align-self: flex-start;
-    padding: 8px 16px;
+    padding: 9px 16px;
     font-size: 13px;
-  }
-    .cta-grid {
-    grid-template-columns: 1fr;
   }
 }
 
-
-@media (max-width: 480px) {
-  .cta-section {
-    padding: 25px 0;
-  }
-
-  .cta-card {
-    border-radius: 12px;
-    padding: 18px 15px;
-  }
-
-  .cta-content h2 {
+@media (max-width: 552px) {
+  .Concern-content h2 {
     font-size: 18px;
   }
 
-  .cta-content p {
+  .Concern-content p {
     font-size: 12px;
   }
 
-  .cta-btn {
-    width: auto;
+  .Concern-btn {
+    width: 100%;
+    text-align: center;
   }
 }
