@@ -3,6 +3,14 @@
   background-color: rgba(240, 240, 240, 1);
   padding-top: 13px;
   padding-bottom: 13px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+}
+
+.nav-spacer {
+  height: 76px;
 }
 
 .logo {
@@ -145,7 +153,11 @@
     padding: 10px 12px;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border-radius: 0 0 12px 12px !important;
-    position: relative;
+    position: fixed;
+  }
+
+  .nav-spacer {
+    height: 60px;
   }
 
   .nav-main .container,
