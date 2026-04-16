@@ -118,9 +118,10 @@ font-weight: 400;
   .overview-section {
     /* padding-top: 60px; */
     /* padding-bottom: 90px; */
-      background:none;
-       padding-top: 60px;
-  padding-bottom: 50px;
+    /* background: url("../../assets/images/bg.png") no-repeat center;
+    background-size:cover; */
+    padding-top: 60px;
+    padding-bottom: 50px;
 
 
   }
@@ -154,7 +155,7 @@ font-weight: 400;
   .search-box input{
     text-align: center;
     padding-top: 5px;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   
