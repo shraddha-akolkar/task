@@ -112,6 +112,8 @@ const Slider = () => {
 
     if (touchStart - touchEnd > 50) next();
     if (touchStart - touchEnd < -50) prev();
+    setTouchStart(null);
+    setTouchEnd(null);
   };
 
   return (
@@ -140,7 +142,11 @@ const Slider = () => {
               }}
             >
               {extended.map((item, i) => (
-                <div className="slider-item" key={i}>
+                <div
+                  className="slider-item"
+                  key={i}
+                  style={{ minWidth: `${100 / itemsPerView}%` }}
+                >
                   <div className="testimonial-card">
                     <div className="quote">
                       <Doublequotes />
