@@ -1,6 +1,5 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./News.css";
-// import img from "../../assets/images/youutube.png";
 import play from "../../assets/images/play.png";
 import Arrow from "../../assets/svg/Arrow";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,21 +8,15 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+
 import video1 from "../../assets/video/video1.mp4";
 import video2 from "../../assets/video/video2.mp4";
+
 const slides = [
-  {
-    video: video1,
-  },
-  {
-    video: video2,
-  },
-  {
-    video: video1,
-  },
-  {
-    video: video2,
-  },
+  { video: video1 },
+  { video: video2 },
+  { video: video1 },
+  { video: video2 },
 ];
 
 const NewsData = [
@@ -46,14 +39,16 @@ const NewsData = [
 ];
 
 const News = () => {
-    const videoRefs = useRef([]);
+  const videoRefs = useRef([]);
+  const [playingIndex, setPlayingIndex] = useState(null);
 
   return (
     <div className="section-space">
       <div className="container-fluid">
         <div className="row g-4">
+
           <div className="col-lg-7">
-            <h4 className="section-title">News / Press Release</h4>
+            <h4 className="heading">News / Press Release</h4>
 
             <div className="news-list">
               {NewsData.map((item, index) => (
@@ -66,76 +61,66 @@ const News = () => {
           </div>
 
           <div className="col-lg-5">
-            <h4 className="section-title">Spotlight</h4>
+            <h4 className="heading ">Spotlight</h4>
 
-      
+            <Swiper
+              modules={[Navigation, Pagination]}
+              navigation={{
+                nextEl: ".custom-next",
+                prevEl: ".custom-prev",
+              }}
+              pagination={{ clickable: true }}
+              loop={true}
+              className="spotlight-swiper"
 
-
-    <Swiper
-      modules={[Navigation, Pagination]}
-      navigation={{
-        nextEl: ".custom-next",
-        prevEl: ".custom-prev",
-      }}
-      pagination={{ clickable: true }}
-      loop={true}
-      className="spotlight-swiper"
-
-      onSlideChange={(swiper) => {
-        // Pause all videos
-        videoRefs.current.forEach((video) => {
-          if (video) {
-            video.pause();
-            video.currentTime = 0;
-          }
-        });
-
-        // Play active slide video
-        const activeVideo = videoRefs.current[swiper.realIndex];
-        if (activeVideo) {
-          activeVideo.play();
-        }
-      }}
-
-      onSwiper={(swiper) => {
-        // Auto play first video on load
-        setTimeout(() => {
-          const firstVideo = videoRefs.current[swiper.realIndex];
-          if (firstVideo) firstVideo.play();
-        }, 300);
-      }}
-    >
-      {slides.map((item, index) => (
-        <SwiperSlide key={index}>
-          <div className="spotlight-card">
-            <video
-              ref={(el) => (videoRefs.current[index] = el)}
-              src={item.video}
-              className="spotlight-img"
-              muted
-              loop
-              playsInline
-            />
-
-            {/* Optional Play Button */}
-            <div
-              className="play-btn"
-              onClick={() => videoRefs.current[index]?.play()}
+              onSlideChange={() => {
+                videoRefs.current.forEach((video) => {
+                  if (video) {
+                    video.pause();
+                    video.currentTime = 0;
+                  }
+                });
+                setPlayingIndex(null);
+              }}
             >
-              <img src={play} alt="play" />
-            </div>
-          </div>
-        </SwiperSlide>
-      ))}
+              {slides.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <div className="spotlight-card">
 
-      <div className="custom-prev">
-        <Arrow />
-      </div>
-      <div className="custom-next">
-        <Arrow />
-      </div>
-    </Swiper>
- 
+                    <video
+                      ref={(el) => (videoRefs.current[index] = el)}
+                      src={item.video}
+                      className="spotlight-img"
+                      muted
+                      playsInline
+                      controls={playingIndex === index}
+                    />
+
+                    {playingIndex !== index && (
+                      <div
+                        className="play-btn"
+                        onClick={() => {
+                          const video = videoRefs.current[index];
+                          if (video) {
+                            video.play();
+                            setPlayingIndex(index);
+                          }
+                        }}
+                      >
+                        <img src={play} alt="play" />
+                      </div>
+                    )}
+                  </div>
+                </SwiperSlide>
+              ))}
+
+              <div className="custom-prev">
+                <Arrow />
+              </div>
+              <div className="custom-next">
+                <Arrow />
+              </div>
+            </Swiper>
 
           </div>
         </div>

@@ -104,6 +104,13 @@ body {
   font-size: 30px;
 }
 
+
+@media(max-width:768px){
+  .heading{
+    font-size: 26px;
+  }
+}
+
 .subheading {
   font-family: 'Euclid', sans-serif;
   font-weight: 500;

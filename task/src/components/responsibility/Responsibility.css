@@ -28,13 +28,14 @@
         display: flex;
         flex-direction: column;
         padding: 20px 16px;
-        gap: 12px;
+        /* gap: 18px; */
       
     }
 
     .mobile-heading{
         display: block;
         padding-top: 0;
+        padding-bottom: 20px;
         margin-bottom: 0;
     }
 
@@ -53,7 +54,7 @@
     }
 
     .left-section p{
-        font-size: 20px;
+        font-size: 17px;
     }
     .right-section img{
         width: 100%;

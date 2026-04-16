@@ -95,28 +95,36 @@ const Spotlight = () => {
     "Vidhansabha",
     "Loksabha",
   ];
-
   return (
     <div>
       <div className="container-fluid spotlight-section">
-        <div className="d-flex justify-content-between align-items-center flex-wrap mb-4">
-          <h2 className="spotlight-title">Leaders in Spotlight</h2>
+       <div className="d-flex justify-content-between align-items-center flex-wrap mb-4">
+  <h2 className="heading">Leaders in Spotlight</h2>
 
-          <ul className="nav spotlight-tabs">
-            {tabs.map((tab) => (
-              <li
-                key={tab}
-                className={`nav-item ${
-                  activeTab === tab ? "active" : ""
-                }`}
-                onClick={() => setActiveTab(tab)}
-              >
-                {tab}
-              </li>
-            ))}
-          </ul>
-        </div>
+  <ul className="nav spotlight-tabs desktop-tabs">
+    {tabs.map((tab) => (
+      <li
+        key={tab}
+        className={`nav-item ${activeTab === tab ? "active" : ""}`}
+        onClick={() => setActiveTab(tab)}
+      >
+        {tab}
+      </li>
+    ))}
+  </ul>
 
+  <select
+    className="mobile-dropdown"
+    value={activeTab}
+    onChange={(e) => setActiveTab(e.target.value)}
+  >
+    {tabs.map((tab) => (
+      <option key={tab} value={tab}>
+        {tab}
+      </option>
+    ))}
+  </select>
+</div>
         <div className="row g-3 spotlight-slider">
           {data.map((item, index) => (
             <div className="col-lg-3 col-md-6" key={index}>

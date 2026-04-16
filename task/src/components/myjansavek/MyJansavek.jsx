@@ -44,7 +44,7 @@ const Why = () => {
     <div className="why-section section-space">
       <div className="container">
         <div className="why-heading text-center">
-          <h2>Why MyJansevak?</h2>
+          <h2 className="heading">Why MyJansevak?</h2>
         </div>
         <div className="why-row">
           {" "}

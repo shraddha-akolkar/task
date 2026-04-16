@@ -3,7 +3,7 @@
   margin-bottom: 20px;
   /* padding-top: 40px; */
   font-family: 'Euclid';
-font-size: 30px;
+/* font-size: 30px; */
 }
 
 .slider-wrapper {
@@ -187,21 +187,28 @@ padding-top: 0px;
 
 @media (max-width: 768px) {
   .slider-title {
-    font-size: 30px;
+    /* font-size: 30px; */
     margin-bottom: 16px;
   }
 
   .testimonial-card p {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.4;
   }
 
+   .slider-wrapper {
+    overflow: hidden;
+  }
+  
   .slider-track-wrapper {
-    padding: 0 8px;
+    padding: 0;  
   }
 
   .slider-item {
     padding: 0 4px;
+    
+    min-width: 100% !important;  
+
   }
 
   .testimonial-card {

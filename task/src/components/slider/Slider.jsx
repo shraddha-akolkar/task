@@ -54,8 +54,7 @@ const testimonials = [
 
 const Slider = () => {
   const [itemsPerView, setItemsPerView] = useState(3);
-  const [index, setIndex] = useState(3);
-  const [isTransitioning, setIsTransitioning] = useState(true);
+const [index, setIndex] = useState(itemsPerView);  const [isTransitioning, setIsTransitioning] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
