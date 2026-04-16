@@ -1,0 +1,11 @@
+.home-sections .section-space {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.home-sections .cards-row,
+.home-sections .spotlight-section,
+.home-sections .trust-section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
