@@ -19,7 +19,7 @@
 
 .spotlight-tabs .nav-item {
   cursor: pointer;
-  color: #555;
+  color: #111111;
   font-weight: 400;
   position: relative;
   font-family: 'Euclid';
@@ -81,14 +81,16 @@ font-size: 15px;
 .leader-body h6 {
   font-weight: 500;
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   
 
 }
 
 .leader-body p {
   font-size: 13px;
-  color: #555;
+  font-weight: 500 !important;
+
+  color: #111111;
   margin-bottom: 4px;
 }
 
@@ -158,3 +160,105 @@ font-size: 15px;
   box-shadow: 0 6px 14px rgba(13, 44, 125, 0.25);
 }
 
+
+
+@media (max-width: 991px) {
+  .spotlight-section {
+    padding: 20px 15px;
+  }
+
+  .spotlight-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+
+  .d-flex.justify-content-between {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .spotlight-tabs {
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .spotlight-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .spotlight-tabs .nav-item {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .spotlight-slider .col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .leader-card {
+    max-width: 100%;
+  }
+
+  .leader-img img {
+    height: auto;
+    min-height: 180px;
+    max-height: 240px;
+    object-fit: cover;
+    object-position: top center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .leader-img img {
+    height: 220px;
+    object-fit: cover;
+    object-position: top center;
+  }
+}
+@media (max-width: 575px) {
+  .spotlight-title {
+    font-size: 29.6px;
+  }
+
+  .spotlight-slider .col-lg-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .leader-card {
+    max-width: 100%;
+  }
+
+  .leader-body h6{
+    font-size: 20px;
+  }
+
+  .party span {
+    font-size: 17px;
+  }
+  .party .info{
+    font-size: 17px;
+  }
+
+  .leader-img img {
+    height: 220px;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  .spotlight-tabs {
+    gap: 18px;
+  }
+
+  .spotlight-tabs .nav-item {
+    font-size: 16px;
+  }
+}

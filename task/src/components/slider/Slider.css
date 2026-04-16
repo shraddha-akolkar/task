@@ -41,7 +41,7 @@ font-size: 30px;
 
   display: flex;             
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .testimonial-card.active {
@@ -52,7 +52,7 @@ font-size: 30px;
 
 .testimonial-card p {
   font-size: 15px;
-  color: #444;
+  color: #111111;
   line-height: 1.3;
   padding-top: 5px;
   padding-right: 12px;
@@ -156,7 +156,7 @@ padding-top: 0px;
   display: inline-block;
   border-radius: 50%;
   margin: 0 5px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 
 }
 
@@ -187,8 +187,13 @@ padding-top: 0px;
 
 @media (max-width: 768px) {
   .slider-title {
-    font-size: 22px;
+    font-size: 30px;
     margin-bottom: 16px;
+  }
+
+  .testimonial-card p {
+    font-size: 20px;
+    line-height: 1.4;
   }
 
   .slider-track-wrapper {
@@ -208,19 +213,41 @@ padding-top: 0px;
   .user-info {
     flex-direction: column;
     align-items: flex-start;
+   
   }
 
   .user-right {
+    
     text-align: left;
   }
 
+
+  .user-left h6{
+    font-size: 17px;
+  }
+   .user-left span{
+    font-size: 17px;
+  }
+
+ .user-right .title{
+    font-size: 17px;
+  }
+
+  .user-right .link{
+    font-size: 17px;
+  }
   .arrow-btn {
     display: none;
   }
 
   .dots .dot {
-    margin-bottom: 24px;
+    margin-bottom: -2px;
   }
+
+  .quote{
+    display: none;
+  }
+  
 }
 
 

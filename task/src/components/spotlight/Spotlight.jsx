@@ -129,7 +129,7 @@ const Spotlight = () => {
                 </div>
 
                 <div className="leader-body">
-                  <div className="d-flex justify-content-between align-items-center">
+                  <div className="d-flex justify-content-between align-items-center leader-info">
                     <h6>{item.name}</h6>
                     <span className="rating">
                       {item.rating}

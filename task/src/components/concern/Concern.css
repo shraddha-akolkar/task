@@ -28,13 +28,13 @@
 
 
 .Concern-content h2 {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 400;
   margin-bottom: 6px;
 }
 
 .Concern-content p {
-  font-size: 14px;
+  font-size: 15px;
   opacity: 0.9;
 }
 
@@ -103,11 +103,11 @@
 
 @media (max-width: 552px) {
   .Concern-content h2 {
-    font-size: 18px;
+    font-size: 27px;
   }
 
   .Concern-content p {
-    font-size: 12px;
+    font-size: 20px;
   }
 
   .Concern-btn {

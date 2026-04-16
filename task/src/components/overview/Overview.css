@@ -48,7 +48,7 @@
 
 
 .overview-main p {
-  font-size: 14px;
+  font-size: 15px;
   color: #444;
   margin-bottom: 25px;
   font-family: 'Euclid';
@@ -132,7 +132,7 @@ font-weight: 400;
 
   .overview-main h2 {
     font-size: 28px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
   }
 
   .overview-main p {

@@ -49,7 +49,7 @@ const Why = () => {
         <div className="why-row">
           {" "}
           {data.map((item, index) => (
-            <div key={index} className="col-lg-2 col-md-4 col-sm-6">
+            <div key={index} >
               <div className="why-card-wrapper">
                 <img src={item.card} alt="card" className="card-bg" />
 

@@ -10,7 +10,7 @@
 .why-heading h2 {
   font-size: 30px;
   font-weight: 500;
-  color: #222;
+  color: #111111;
   font-family: 'Euclid';
 
 }
@@ -31,9 +31,9 @@
 
 .why-row {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 24px;
 }
 
 .why-icon {
@@ -64,12 +64,12 @@ font-size: 20px;
 }
 
 .why-content p {
-  font-size: 13px;
-  color: #555;
+  font-size: 14px;
+  color: #111111;
   line-height: 1.3;
   font-family: 'Euclid';
 font-weight: 400;
-  padding-top: 8px;
+  padding-top: 0px;
 }
 
 
@@ -78,63 +78,166 @@ font-weight: 400;
   background: #f15a24;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
+  .why-row {
+    justify-content: center;
+    gap: 36px;
+  }
+
   .why-card-wrapper {
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 200px;
   }
 
-  .card-bg {
-    height: auto;
-    min-height: unset;
-  }
-
- 
-
-
-
-.why-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
- .why-icon {
-    width: 80px;
-    height: 80px;
-    top: 50px;
+  .why-icon {
+    width: 50px;
+    height: 50px;
+    top: 22px;
   }
 
   .why-icon svg {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
   }
 
-.why-content {
-  position: absolute;
-  top: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
+  .why-content {
+    top: 95px;
+    width: 85%;
+  }
+
+  .why-content h5 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .why-content p {
+    font-size: 15px;
+    line-height: 1;
+    padding: 0;
+    /* padding-top: 4px; */
+  }
 }
 
-.why-content h5 {
-  font-weight: 600;
-  margin-top: 40px;
-  font-family: 'Euclid';
-font-size: 30px;
+
+
+
+@media (max-width: 768px) {
+  .why-row {
+    justify-content: center;  
+    gap: 30px;                
+  }
+
+  .why-card-wrapper {
+    width: 280px;             
+  }
+
+  .why-icon {
+    width: 50px;
+    height: 50px;
+    top: 22px;
+  }
+
+  .why-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .why-content {
+    top: 160px;
+    width: 85%;
+  }
+
+  .why-content h5 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .why-content p {
+    font-size: 19px;
+    line-height: 1;
+    padding: 0;
+    /* padding-top: 4px; */
+  }
 }
 
-.why-content p {
-  font-size: 20px;
-  color: #555;
-  line-height: 1.1;
-  font-family: 'Euclid';
-font-weight: 400;
-  /* padding-top: 18px; */
+
+
+
+
+@media (max-width: 480px) {
+  .why-card-wrapper {
+    width: 92vw;
+    max-width: 100%;
+  }
+
+    .why-content {
+    /* top: 185px; */
+    width: 82%;
+  }
+
+  .why-icon {
+    width: 50px;
+    height: 50px;
+    top:42px;
+  }
+
+
 }
 
+
+
+
+@media(max-width: 552px){
+   .why-content {
+    top: 180px !important;
+    width: 82%;
+  }
+   .why-icon {
+    width: 50px;
+    height: 50px;
+    top:72px;
+  }
+
+   .why-icon svg {
+    width: 70px;
+    height: 50px;
+  }
+
+  .why-content h5 {
+    font-size: 27px;
+    line-height: 1.4;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .why-content p {
+    font-size: 23px;
+    line-height: 0.9;
+    padding-top: 0;
+  }
+}
+
+
+@media(max-width: 325px){
+   .why-content {
+     top: 168px;
+    width: 82%;
+  }
+
+  .why-content h5 {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+  .why-content p {
+    font-size: 19px;
+    /* line-height: 1.4; */
+    padding-top: 0;
+  }
+   .why-icon {
+    width: 50px;
+    height: 50px;
+    top:52px;
+  }
   
 }

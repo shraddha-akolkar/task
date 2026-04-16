@@ -156,7 +156,7 @@ const Slider = () => {
 
                     <div className="user-info para">
                       <div className="user-left">
-                        <h6 >{item.name}</h6>
+                        <h6>{item.name}</h6>
                         <span >{item.area}</span>
                       </div>
 
@@ -176,7 +176,7 @@ const Slider = () => {
           </button>
         </div>
 
-        <div className="dots text-center mt-4">
+        <div className="dots text-center">
           {testimonials.map((_, i) => (
             <span
               key={i}

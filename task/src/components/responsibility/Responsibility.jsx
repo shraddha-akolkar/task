@@ -5,8 +5,8 @@ import img from "../../assets/images/earth.png";
 
 const Responsibility = () => {
   return (
-    <div className="section-space">
-      <div className="container-fluid responsibility-section row ">
+    <div className="section-space resp-main">
+      <div className=" responsibility-section row ">
         <h2 className="heading resp-header mobile-heading">
           Our Nation, Our Responsibility
         </h2>
