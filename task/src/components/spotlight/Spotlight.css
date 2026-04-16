@@ -1,0 +1,160 @@
+.spotlight-section {
+  padding: 30px 0;
+}
+
+.spotlight-title {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Euclid';
+
+}
+
+.spotlight-tabs {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.spotlight-tabs .nav-item {
+  cursor: pointer;
+  color: #555;
+  font-weight: 400;
+  position: relative;
+  font-family: 'Euclid';
+font-size: 15px;
+}
+
+.spotlight-tabs .active {
+  color: #ff6600;
+}
+
+.spotlight-tabs .active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ff6600;
+  bottom: -5px;
+  left: 0;
+}
+
+.leader-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 9px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  height: 100%;
+  max-width: 300px;
+  margin: auto;
+
+}
+
+.leader-img {
+  position: relative;
+}
+
+.leader-img img {
+  width: 100%;
+  border-radius: 15px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.verified {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 6px;
+}
+
+.leader-body {
+  padding: 6px 5px;
+  font-family: 'Euclid';
+
+}
+
+.leader-body h6 {
+  font-weight: 500;
+  margin: 0;
+  font-size: 14px;
+  
+
+}
+
+.leader-body p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.leader-body p:first-of-type {
+  margin-top: 10px;
+}
+
+
+.rating {
+  background: #f0f0f0;
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.rating svg{
+    margin-top: -7px;
+    margin-left: 5px;
+}
+
+
+.party span{
+  font-family: 'Euclid';
+  font-weight: 400;
+
+}
+
+.party .info{
+  font-weight: 500;
+}
+.profile-btn {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 8px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+
+
+.profile-btn.filled {
+  background: #0d2c7d;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.profile-btn.filled:hover {
+  color: black;
+    border: 1px solid #0d2c7d;
+  background: transparent;
+  box-shadow: 0 6px 14px rgba(13, 44, 125, 0.3);
+}
+
+.profile-btn.outline {
+  border: 1px solid #0d2c7d;
+  background: transparent;
+  color: #0d2c7d;
+  transition: all 0.3s ease;
+}
+
+.profile-btn.outline:hover {
+  background: #0d2c7d;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(13, 44, 125, 0.25);
+}
+

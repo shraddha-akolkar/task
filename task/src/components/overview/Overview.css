@@ -1,0 +1,164 @@
+
+.overview-section {
+  width: 100%;
+  background: url("../../assets/images/bg.png") no-repeat center 100px;
+  background-size: 87%;
+  background-color: rgba(240, 240, 240, 1);
+
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+
+  position: relative;
+  overflow: hidden;
+
+  padding-top: 55px;
+  padding-bottom: 120px;
+}
+
+.overview-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(240, 240, 240, 0.9);
+  z-index: 1;
+}
+
+
+.overview-main {
+  /* max-width: 700px; */
+  margin: auto;
+  padding: 20px;
+    padding-top: 72px; 
+
+  position: relative;
+  z-index: 2;
+}
+
+
+.overview-main h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.3;
+  font-family: 'Euclid';
+  font-weight: 600;
+
+  /* padding-top: 40px; */
+}
+
+
+.overview-main p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 25px;
+  font-family: 'Euclid';
+font-weight: 400;
+}
+
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 13px 18px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  width: 100%;
+  max-width: 1800px; 
+  margin: auto;
+}
+
+.search-box input {
+  flex: 8; 
+  min-width: 0;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 6px;
+  background: transparent;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+
+.overview-button {
+  background: #f25c05;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.overview-button:hover {
+  background: #d94f04;
+}
+
+
+@media (max-width: 1024px) {
+  .overview-main h2 {
+    font-size: 28px;
+  }
+
+  .overview-main {
+    padding: 15px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .overview-section {
+    /* padding-top: 60px; */
+    /* padding-bottom: 90px; */
+      background:none;
+       padding-top: 60px;
+  padding-bottom: 50px;
+
+
+  }
+/* now  */
+  .overview-button{
+    padding-left: 20px;
+    padding-right: 0;
+  }
+
+  .overview-main h2 {
+    font-size: 28px;
+    padding-top: 20px;
+  }
+
+  .overview-main p {
+    font-size: 20px;
+  }
+
+  .search-box {
+    padding: 6px 10px;
+    font-size: 19px;
+  }
+
+  .overview-button {
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+  .search-icon{
+    display: none;
+  }
+
+  .search-box input{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 17px;
+  }
+
+  
+}
+
+

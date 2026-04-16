@@ -1,0 +1,165 @@
+.nav-main {
+  width: 100%;
+  background-color: rgba(240, 240, 240, 1);
+padding-top: 13px;
+padding-bottom: 13px;
+ 
+}
+
+.logo {
+  height: 50px;
+  /* width: 0px; */
+  object-fit: contain;
+  padding-left: 15px;
+}
+
+.location {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  font-weight: 400 !important;
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+.dropdown-arrow svg{
+  rotate: 90deg;
+  margin-top: -3px !important;
+}
+.dropdown-menu-custom {
+  position: absolute;
+  top: 40px;
+  right: 210px; 
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 6px 0;
+  min-width: 140px;
+  z-index: 999;
+}
+
+.dropdown-item-custom {
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown-item-custom:hover {
+  background: #f2f2f2;
+}
+
+.btn {
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 6px;
+
+
+}
+
+.complaint-btn {
+  border: 2px solid #ff7a00 !important;
+  color: #ff7a00  !important;
+  background-color: transparent  !important;
+  border-radius: 8px !important;
+  font-family: 'Euclid';
+  font-weight: 500 !important;
+  font-size: 15px !important;
+
+}
+
+.complaint-btn:hover {
+  background-color: #ff7a00 !important;
+  color: white !important;
+}
+
+.login-btn {
+  background-color: #1e3a8a  !important;
+  color: white  !important;
+  border: none;
+  padding: 6px 17px !important;
+  margin-right: 12px;
+   font-family: 'Euclid';
+  font-weight: 500 !important;
+  font-size: 15px !important;
+}
+
+.login-btn:hover {
+  background-color: #1b44b4 !important;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  body {
+    /* padding-top: 70px; */
+  }
+
+  .nav-main {
+    padding: 10px 12px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 0 0 12px 12px !important;
+  }
+
+  .nav-main .container,
+  .nav-main .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border-radius: 0 0 12px 12px !important;
+box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+  }
+
+  .logo {
+    height: 36px;
+    padding-left: 0;
+  }
+
+  .location {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dropdown-arrow svg {
+    width: 12px;
+    height: 12px;
+    margin-top: -2px !important;
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+    .complaint-btn {
+    display: inline-block; 
+    font-size: 11px !important;
+    padding: 4px 8px !important;
+    border-width: 1.5px !important;
+    border-radius: 6px !important;
+    line-height: 1.2;
+  }
+
+  .login-btn {
+    padding: 5px 10px !important;
+    font-size: 12px;
+    margin-right: 0;
+    border-radius: 6px;
+  }
+}
+
