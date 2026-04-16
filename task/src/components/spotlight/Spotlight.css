@@ -44,10 +44,12 @@ font-size: 15px;
   background: #fff;
   border-radius: 18px;
   /* padding: 9px; */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.08); */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: 100%;
   max-width: 300px;
   margin: auto;
+  padding: 10px;
 
 }
 
@@ -73,9 +75,9 @@ font-size: 15px;
 }
 
 .leader-body {
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   font-family: 'Euclid';
-
+padding-top: 10px;
 }
 
 .leader-body h6 {

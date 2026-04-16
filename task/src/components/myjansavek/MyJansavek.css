@@ -177,7 +177,7 @@ font-weight: 400;
   }
 
     .why-content {
-    /* top: 185px; */
+    top: 185px !important;
     width: 82%;
   }
 
@@ -186,7 +186,17 @@ font-weight: 400;
     height: 50px;
     top:42px;
   }
-
+  .why-content h5 {
+    font-size: 22px !important;
+    line-height: 1.4;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .why-content p {
+    font-size: 20px !important;
+    line-height: 1.2;
+    padding-top: 0;
+  }
 
 }
 
@@ -225,16 +235,16 @@ font-weight: 400;
 
 @media(max-width: 325px){
    .why-content {
-     top: 168px;
+     top: 140px !important;
     width: 82%;
   }
 
   .why-content h5 {
-    font-size: 25px;
+    font-size: 20px !important;
     line-height: 1.4;
   }
   .why-content p {
-    font-size: 19px;
+    font-size: 17px !important;
     /* line-height: 1.4; */
     padding-top: 0;
   }
