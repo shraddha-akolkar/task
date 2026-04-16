@@ -88,6 +88,16 @@ padding-top: 10px;
 
 }
 
+.leader-info {
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+
+.leader-info h6 {
+  flex: 1;
+  min-width: 0;
+}
+
 .leader-body p {
   font-size: 13px;
   font-weight: 500 !important;
@@ -106,6 +116,10 @@ padding-top: 10px;
   padding: 3px 8px;
   border-radius: 8px;
   font-size: 13px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
 }
 
 .rating svg{
@@ -177,7 +191,7 @@ padding-top: 10px;
     width: 100%;
   }
 
-  .d-flex.justify-content-between {
+  .spotlight-section > .d-flex.justify-content-between {
     flex-direction: column;
     align-items: flex-start !important;
   }

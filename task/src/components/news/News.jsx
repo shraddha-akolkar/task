@@ -42,6 +42,27 @@ const News = () => {
   const videoRefs = useRef([]);
   const [playingIndex, setPlayingIndex] = useState(null);
 
+  const toggleVideoPlayback = (index) => {
+    const selectedVideo = videoRefs.current[index];
+    if (!selectedVideo) return;
+
+    if (playingIndex === index) {
+      selectedVideo.pause();
+      setPlayingIndex(null);
+      return;
+    }
+
+    videoRefs.current.forEach((video, videoIndex) => {
+      if (video && videoIndex !== index) {
+        video.pause();
+        video.currentTime = 0;
+      }
+    });
+
+    selectedVideo.play();
+    setPlayingIndex(index);
+  };
+
   return (
     <div className="section-space">
       <div className="container-fluid">
@@ -93,19 +114,15 @@ const News = () => {
                       className="spotlight-img"
                       muted
                       playsInline
-                      controls={playingIndex === index}
+                      controls={false}
+                      onClick={() => toggleVideoPlayback(index)}
+                      onEnded={() => setPlayingIndex(null)}
                     />
 
                     {playingIndex !== index && (
                       <div
                         className="play-btn"
-                        onClick={() => {
-                          const video = videoRefs.current[index];
-                          if (video) {
-                            video.play();
-                            setPlayingIndex(index);
-                          }
-                        }}
+                        onClick={() => toggleVideoPlayback(index)}
                       >
                         <img src={play} alt="play" />
                       </div>
