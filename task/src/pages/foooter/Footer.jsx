@@ -83,7 +83,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>
             ©MyJansevak, 2026 All rights reserved. Powered by{" "}
-            <span>Hats-Off</span>
+            <a href="https://www.hatsoffdigital.com/"><span>Hats-Off</span></a>
           </p>
           <p className="bottom-right">
             Privacy policy <span className="">|</span> Terms of use

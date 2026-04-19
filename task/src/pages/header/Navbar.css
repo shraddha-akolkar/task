@@ -141,7 +141,12 @@
 }
 
 
-
+@media (max-width: 1024){
+   .nav-main .d-flex {
+   
+   
+  }
+}
 
 @media (max-width: 768px) {
 
@@ -151,6 +156,7 @@
 
    .nav-main .d-flex {
     position: relative;
+    padding-left: 5px;
   }
 
   .hamburger-btn {

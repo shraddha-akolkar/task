@@ -201,7 +201,11 @@ padding-top: 10px;
     overflow-x: auto;
     flex-wrap: nowrap;
     gap: 20px;
+    align-items: center;
+    text-align: center !important;
+    padding-top: 10px;
     padding-bottom: 8px;
+    padding-left: 50px;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
@@ -256,14 +260,14 @@ padding-top: 10px;
   }
 
   .leader-body h6{
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .party span {
-    font-size: 17px;
+    font-size: 15px;
   }
   .party .info{
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .leader-img img {
@@ -284,22 +288,43 @@ padding-top: 10px;
     display: none; 
   }
 
-  .mobile-dropdown {
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px 15px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    font-family: 'Euclid';
-    font-size: 14px;
-    outline: none;
-    cursor: pointer;
+.mobile-dropdown {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 40px 10px 15px; 
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: 'Euclid';
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
   max-width: 100%;
   box-sizing: border-box;
 
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background: url("data:image/svg+xml;utf8,<svg fill='%23111111' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>") no-repeat;
+  
+  background-position: right 15px center;
+  background-size: 16px;
+}
+
+
+  .leader-info {
+    align-items: flex-start;
   }
 
+  .leader-info h6 {
+    white-space: normal;
+    word-break: break-word;
+  }
 
+  .rating {
+    align-self: flex-start;
+  }
  
 }

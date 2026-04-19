@@ -9,7 +9,7 @@ const Concern = () => {
           
           <div className="Concern-card orange">
             <div className="Concern-content">
-              <h2>Raise an Concern</h2>
+              <h2 className="">Raise an Concern</h2>
               <p>
                 Over 5,000 concerns have been reported to local authorities.
               </p>

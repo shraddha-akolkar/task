@@ -78,6 +78,7 @@ font-size: 20px;
   color: #fff;
 }
 
+
 .newsletter-input {
   position: relative;
   width: 400px;
@@ -171,10 +172,11 @@ font-size: 20px;
 
 }
 
-.footer-bottom span{
+.footer-bottom a{
   font-weight: 500;
   text-decoration: underline;
   cursor: pointer;
+  color: black;
 }
 
 .bottom-right span{
@@ -214,12 +216,16 @@ font-size: 20px;
 
   }
 .footer-container{
-   padding-left: 6% !important;
-  padding-right: 6% !important;
+   
 }
   .newsletter {
     padding: 25px;
   }
+  .newsletter-text h3{
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
 
   .footer-links {
     grid-template-columns: repeat(4, 1fr);
@@ -273,18 +279,28 @@ font-size: 20px;
 
    .footer-links {
     grid-template-columns: 1fr;   
-    gap: 20px;
+    gap: 0px;
     padding-left: 5px;
   }
 
   .footer-links h4 {
-    font-size: 20px;
+    font-size: 15px;
+    margin-bottom: 2px;
+
   }
 
+
   .footer-links li {
-    font-size: 17px;
+    font-size: 13px;
     margin: 0;
 
+  }
+  .footer-bottom{
+    padding: 0;
+  }
+
+  .footer-bottom p{
+    margin: 0;
   }
 }
 
@@ -309,16 +325,18 @@ font-size: 20px;
   }
 
   .footer-title {
-    font-size: 26px;
+    font-size: 23px;
   }
 
   .footer-desc {
     margin: 0;
-    font-size: 17px;
+    font-size: 15px;
+   text-align: center;
   }
 
   .footer-bottom {
-    font-size: 17px;
+    font-size: 14px;
     text-align: left;
+    gap: 7px;
   }
 }

@@ -63,13 +63,21 @@ const News = () => {
     setPlayingIndex(index);
   };
 
+
+  const [activeArrow, setActiveArrow] = useState(null);
+
+const handleArrowClick = (dir) => {
+  setActiveArrow(dir);
+  setTimeout(() => setActiveArrow(null), 300);
+};
+
   return (
     <div className="section-space">
       <div className="container-fluid">
         <div className="row g-4">
 
           <div className="col-lg-7">
-            <h4 className="heading">News / Press Release</h4>
+            <h4 className="heading news-head">News / Press Release</h4>
 
             <div className="news-list">
               {NewsData.map((item, index) => (
@@ -82,7 +90,7 @@ const News = () => {
           </div>
 
           <div className="col-lg-5">
-            <h4 className="heading ">Spotlight</h4>
+            <h4 className="heading news-head">Spotlight</h4>
 
             <Swiper
               modules={[Navigation, Pagination]}
@@ -131,12 +139,18 @@ const News = () => {
                 </SwiperSlide>
               ))}
 
-              <div className="custom-prev">
-                <Arrow />
-              </div>
-              <div className="custom-next">
-                <Arrow />
-              </div>
+              <div
+  className={`custom-prev ${activeArrow === 'prev' ? 'arrow-active' : ''}`}
+  onClick={() => handleArrowClick('prev')}
+>
+  <Arrow />
+</div>
+<div
+  className={`custom-next ${activeArrow === 'next' ? 'arrow-active' : ''}`}
+  onClick={() => handleArrowClick('next')}
+>
+  <Arrow />
+</div>
             </Swiper>
 
           </div>

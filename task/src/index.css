@@ -107,7 +107,9 @@ body {
 
 @media(max-width:768px){
   .heading{
-    font-size: 26px;
+    font-size: 23px;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 

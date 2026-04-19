@@ -167,7 +167,7 @@ padding-top: 0px;
 
 @media (max-width: 1024px) {
   .slider-title {
-    font-size: 26px;
+    /* font-size: 26px; */
   }
 
   .testimonial-card {
@@ -176,15 +176,68 @@ padding-top: 0px;
   }
 
   .testimonial-card p {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  .user-info {
+    gap: 5px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .slider-track-wrapper {
+    padding: 0 10px;
+  }
+
+  .slider-item {
+    min-width: 50% !important;   /* 2 cards */
+    padding: 0 8px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+    min-height: 240px;
+    border-radius: 14px;
+  }
+
+  .testimonial-card p {
     font-size: 14px;
     line-height: 1.4;
   }
 
   .user-info {
-    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  .user-right {
+    text-align: left;
+  }
+
+  .user-left h6 {
+    font-size: 14px;
+  }
+
+  .user-left span,
+  .user-right .title,
+  .user-right .link {
+    font-size: 13px;
+  }
+
+  .arrow-btn {
+    height: 26px;
+    width: 24px;
+  }
+
+  .quote {
+    top: 12px;
+    right: 12px;
+    transform: scale(0.9);
   }
 }
-
 @media (max-width: 768px) {
   .slider-title {
     /* font-size: 30px; */
@@ -192,7 +245,7 @@ padding-top: 0px;
   }
 
   .testimonial-card p {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.4;
   }
 
@@ -212,15 +265,18 @@ padding-top: 0px;
   }
 
   .testimonial-card {
-    padding: 18px;
+    padding: 15px;
     min-height: 280px;
     border-radius: 12px;
   }
 
+  .testimonial-card p {
+    padding: 0;
+  }
   .user-info {
     flex-direction: column;
     align-items: flex-start;
-   
+   padding-top: 15px !important;
   }
 
   .user-right {
@@ -230,18 +286,18 @@ padding-top: 0px;
 
 
   .user-left h6{
-    font-size: 17px;
+    font-size: 15px;
   }
    .user-left span{
-    font-size: 17px;
+    font-size: 15px;
   }
 
  .user-right .title{
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .user-right .link{
-    font-size: 17px;
+    font-size: 15px;
   }
   .arrow-btn {
     display: none;
