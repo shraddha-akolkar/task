@@ -82,7 +82,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            ©MyJansevak, 2026 All rights reserved. Powered by{" "}
+            © MyJansevak, 2026 All rights reserved. Powered by{" "}
             <a href="https://www.hatsoffdigital.com/"><span>Hats-Off</span></a>
           </p>
           <p className="bottom-right">

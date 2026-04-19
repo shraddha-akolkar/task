@@ -5,7 +5,7 @@ import img from "../../assets/images/earth.png";
 
 const Responsibility = () => {
   return (
-    <div className="resp-main side-space ">
+    <div className="resp-main side ">
       <div className="responsibility-section row ">
         <h2 className="heading resp-header mobile-heading">
           Our Nation, Our Responsibility

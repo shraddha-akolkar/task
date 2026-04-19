@@ -233,7 +233,7 @@ font-size: 20px;
 
   .footer-bottom {
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     text-align: center;
   }
 }
@@ -278,10 +278,11 @@ font-size: 20px;
   }
 
    .footer-links {
-    grid-template-columns: 1fr;   
+    grid-template-columns: repeat(2, 1fr); /* ✅ 2 columns */
     gap: 0px;
     padding-left: 5px;
   }
+
 
   .footer-links h4 {
     font-size: 15px;
@@ -293,14 +294,17 @@ font-size: 20px;
   .footer-links li {
     font-size: 13px;
     margin: 0;
+   
 
   }
   .footer-bottom{
     padding: 0;
   }
 
-  .footer-bottom p{
-    margin: 0;
+  .footer-bottom {
+     
+    padding-top: 15px;
+   
   }
 }
 
@@ -337,6 +341,6 @@ font-size: 20px;
   .footer-bottom {
     font-size: 14px;
     text-align: left;
-    gap: 7px;
+    gap: 3px;
   }
 }

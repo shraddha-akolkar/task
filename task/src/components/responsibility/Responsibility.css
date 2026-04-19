@@ -3,6 +3,10 @@
     border-radius: 15px;
 }
 
+.side{
+    padding-left: 2%;
+    padding-right: 2%;
+}
 .mobile-heading {
     display: none;
 }
@@ -39,7 +43,10 @@
         /* gap: 18px; */
 
     }
-
+.side{
+    padding-left: 5%;
+    padding-right: 5%;
+}
     .mobile-heading {
         display: block;
         padding:0;
