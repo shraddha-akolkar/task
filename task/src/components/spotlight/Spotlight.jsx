@@ -100,7 +100,7 @@ const Spotlight = () => {
       <div className="container-fluid spotlight-section">
        <div className="d-flex justify-content-between align-items-center flex-wrap 
        ">
-  <h2 className="heading ">Leaders in Spotlight</h2>
+  <h2 className="heading spotlight-title">Leaders in Spotlight</h2>
 
   <ul className="nav spotlight-tabs desktop-tabs">
     {tabs.map((tab) => (

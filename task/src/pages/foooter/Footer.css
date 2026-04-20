@@ -127,7 +127,7 @@ font-size: 20px;
 .footer-links {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 230px;
   margin-top: -20px;
   width: 100%;
   padding-left: 20px;
@@ -203,23 +203,28 @@ font-size: 20px;
 
   .footer-links {
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 43px;
     padding-right: 0;
   }
 }
 
 
 @media (max-width: 992px) {
+  .heading{
+    /* text-align: left; */
+    padding-bottom: 15px;
+  }
   .footer-desc {
     line-height: 1.5;
     margin: 0;
-
+text-align: center;
   }
 .footer-container{
    
 }
   .newsletter {
     padding: 25px;
+    margin-top: 15px;
   }
   .newsletter-text h3{
   text-align: left;
@@ -234,6 +239,12 @@ font-size: 20px;
   .footer-bottom {
     flex-direction: column;
     gap: 5px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .footer-bottom p {
+    margin-bottom: 0;
     text-align: center;
   }
 }
@@ -278,9 +289,9 @@ font-size: 20px;
   }
 
    .footer-links {
-    grid-template-columns: repeat(2, 1fr); /* ✅ 2 columns */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 0px;
-    padding-left: 5px;
+    padding-left: 25px;
   }
 
 
@@ -304,8 +315,14 @@ font-size: 20px;
   .footer-bottom {
      
     padding-top: 15px;
+    padding-bottom: 15px;
    
   }
+
+.footer-bottom p{
+  margin-bottom: 0;
+}
+  
 }
 
 
@@ -343,4 +360,5 @@ font-size: 20px;
     text-align: left;
     gap: 3px;
   }
+
 }

@@ -53,45 +53,57 @@ const testimonials = [
 ];
 
 const Slider = () => {
-  const [itemsPerView, setItemsPerView] = useState(3);
-const [index, setIndex] = useState(itemsPerView);  const [isTransitioning, setIsTransitioning] = useState(true);
+const [itemsPerView, setItemsPerView] = useState(3);
+const [index, setIndex] = useState(3);
+const [isTransitioning, setIsTransitioning] = useState(true);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 768) setItemsPerView(1);
-      else if (window.innerWidth <= 1024) setItemsPerView(2);
-      else setItemsPerView(3);
-    };
+useEffect(() => {
+  const handleResize = () => {
+    let newItems;
+    if (window.innerWidth <= 768) newItems = 1;
+    else if (window.innerWidth <= 1024) newItems = 2;
+    else newItems = 3;
 
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    setItemsPerView((prev) => {
+      if (prev !== newItems) {
+        setIsTransitioning(false);
+        setIndex(newItems);
+      }
+      return newItems;
+    });
+  };
 
-  const extended = [
-    ...testimonials.slice(-itemsPerView),
-    ...testimonials,
-    ...testimonials.slice(0, itemsPerView),
-  ];
+  handleResize();
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
+const cloneCount = itemsPerView === 2 ? itemsPerView * 2 : itemsPerView;
+
+const extended = [
+  ...testimonials.slice(-cloneCount),
+  ...testimonials,
+  ...testimonials.slice(0, cloneCount),
+];
 
   const next = () => setIndex((prev) => prev + 1);
   const prev = () => setIndex((prev) => prev - 1);
 
-  useEffect(() => {
-    if (index === extended.length - itemsPerView) {
-      setTimeout(() => {
-        setIsTransitioning(false);
-        setIndex(itemsPerView);
-      }, 400);
-    }
+useEffect(() => {
+  if (index >= testimonials.length + cloneCount) {
+    setTimeout(() => {
+      setIsTransitioning(false);
+      setIndex(cloneCount);
+    }, 400);
+  }
 
-    if (index === 0) {
-      setTimeout(() => {
-        setIsTransitioning(false);
-        setIndex(testimonials.length);
-      }, 400);
-    }
-  }, [index, itemsPerView, extended.length]);
+  if (index < cloneCount) {
+    setTimeout(() => {
+      setIsTransitioning(false);
+      setIndex(testimonials.length + cloneCount - 1);
+    }, 400);
+  }
+}, [index, itemsPerView]);
 
   useEffect(() => {
     if (!isTransitioning) {

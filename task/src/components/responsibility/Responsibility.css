@@ -92,13 +92,30 @@
         padding-bottom: 5px;
     }
 
-
+ 
 }
 
 
 
-@media(max-width:991){
-    .left-section{
-        padding: 0 !important;
+@media (max-width: 992px) {  
+    .left-section {
+        padding-left: 27px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .desktop-heading {
+        margin-left: 0 !important;
+        padding-bottom: 0 !important;
+        margin-bottom:6px !important;      
+        padding-top: 25px;      
+    }
+
+    .left-section p {
+        margin-bottom: 0px !important;        
+    }
+
+    .seconnd-para{
+        padding-top: 7px;
+        padding-bottom: 20px;
     }
 }

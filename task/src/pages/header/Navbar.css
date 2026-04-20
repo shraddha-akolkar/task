@@ -155,7 +155,7 @@
 
    .nav-main .d-flex {
     position: relative;
-    padding-left: 5px;
+    /* padding-left: 5px; */
   }
 
   .hamburger-btn {
@@ -187,9 +187,9 @@ box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.2
 
  
 
-  .logo {
+   .logo {
     height: 36px;
-    padding-left: 0;
+    padding-left: 0 !important; /* parent .d-flex already has 5px */
   }
 
   
@@ -252,3 +252,11 @@ box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.2
   }
 }
 
+
+@media(max-width:414px){
+    .nav-main .d-flex {
+    position: relative;
+    padding-left: 5px;
+  }
+
+}
